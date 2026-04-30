@@ -464,6 +464,7 @@ body {
 .link-card:nth-child(2) { animation: slideInCard 0.6s ease-out 0.35s both; }
 .link-card:nth-child(3) { animation: slideInCard 0.6s ease-out 0.5s both; }
 .link-card:nth-child(4) { animation: slideInCard 0.6s ease-out 0.65s both; }
+.link-card:nth-child(5) { animation: slideInCard 0.6s ease-out 0.8s both; }
 
 @keyframes slideInCard {
     from {
@@ -512,6 +513,11 @@ body {
 .line-icon {
     background: linear-gradient(135deg, #00b900, #00a300);
     box-shadow: 0 4px 15px rgba(0, 185, 0, 0.25);
+}
+
+.donate-icon {
+    background: linear-gradient(135deg, #ff6b9d, #e8446d);
+    box-shadow: 0 4px 15px rgba(232, 68, 109, 0.3);
 }
 
 .gmail-icon {
