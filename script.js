@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     createParticles();
     initCardInteractions();
     initParallaxEffect();
+
 });
 
 /* ============================================
@@ -88,15 +89,9 @@ function initCardInteractions() {
    PARALLAX / MOUSE TRACKING
    ============================================ */
 function initParallaxEffect() {
-    const lightRays = document.querySelector('.light-rays');
-
     document.addEventListener('mousemove', (e) => {
         const x = (e.clientX / window.innerWidth - 0.5) * 2;
         const y = (e.clientY / window.innerHeight - 0.5) * 2;
-
-        if (lightRays) {
-            lightRays.style.transform = `translate(${x * 10}px, ${y * 5}px)`;
-        }
 
         // Subtle parallax on logo
         const logo = document.querySelector('.logo');
